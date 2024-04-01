@@ -1,0 +1,580 @@
+html,
+body,
+#banner {
+	margin: 0;
+	transition: all 0.5s;
+}
+
+:root {
+	--main-color: #000;
+	--bg-light: whitesmoke;
+	--font-color: #222222;
+}
+
+html,
+body {
+	overflow-x: hidden !important;
+	width: 100% !important;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 600;
+	font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+	font-size: 45px;
+	color: #fff;
+	text-transform: uppercase;
+	color: #fff;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+h1::after {
+	position: absolute;
+	content: '';
+	background-color: var(--main-color);
+	width: 200px;
+	height: 2px;
+	border-radius: 5px;
+	bottom: -5px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 600;
+	color: var(--main-color);
+	position: relative;
+}
+
+h2::after {
+	position: absolute;
+	content: '';
+	background-color: var(--main-color);
+	width: 130px;
+	height: 1px;
+	border-radius: 5px;
+	bottom: -5px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+
+h3 {
+	font-size: 26px;
+}
+
+p {
+	color: var(--font-color);
+	line-height: 28px;
+}
+
+.page_home_banner img {
+	height: 700px !important;
+}
+
+.section {
+	padding: 80px 0;
+}
+
+a.common_btn {
+	text-decoration: none;
+	padding: 8px 24px;
+	color: #fff;
+	background: var(--main-color);
+	border: 1px solid transparent;
+	transition: all 0.5s;
+	border-radius: 5px;
+}
+
+a.common_btn:hover {
+	border: 1px solid var(--main-color);
+	color: var(--bg-dark);
+	background: transparent;
+}
+
+
+.container {
+	width: 100%;
+	max-width: 1440px !important;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+/* /header/ */
+
+
+.nav {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+}
+
+.nav>.nav-header {
+	flex: 0.95;
+	padding-left: 1rem;
+}
+
+.nav>.nav-header>.nav-title {
+	font-size: 22px;
+}
+
+.nav>.nav-list {
+	display: flex;
+	gap: 2rem;
+	margin-bottom: 0;
+}
+
+.nav>.nav-list>li {
+	list-style-type: none;
+}
+
+.nav>.nav-list>li a {
+	text-decoration: none;
+	cursor: pointer;
+	color: var(--font-color);
+	transition: all 0.5s;
+}
+
+.active {
+	color: var(--main-color) !important;
+	border-bottom: 1px solid;
+}
+
+.nav>.nav-list>li a:hover {
+	color: var(--main-color)
+}
+
+.nav>#nav-check {
+	display: none;
+}
+
+header {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	padding: 20px 0px;
+	background-color: #fff;
+}
+
+.nav-title a {
+	text-decoration: none;
+	color: var(--main-color);
+}
+
+.nav-title a img {
+	max-width: 120px;
+}
+
+#banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: var(--font-color);
+}
+
+.sub_banner img {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+}
+
+.sub_banner {
+	position: relative;
+}
+
+.sub_banner_content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: var(--font-color);
+	margin-top: 70px;
+	width: 100%;
+}
+
+.sub_banner::before {
+	position: absolute;
+	content: '';
+	background: #000000a8;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+
+a.logo img {
+	max-width: 180px;
+}
+
+h3 {
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	transition: all 0.5s;
+}
+
+.nav-title a svg {
+	width: 250px;
+}
+
+.why_choose_card {
+	text-align: center;
+	border: 1px solid;
+}
+
+.luxhotel_card {
+	margin-bottom: 30px;
+	transition: all 0.5s;
+	text-align: center;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	overflow: hidden;
+	transition: all 0.8s;
+}
+
+.luxury_hotels_inner {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+
+/****cookies*****/
+.cookie-alert {
+	align-items: baseline;
+	background: #fff;
+	color: var(--main-color);
+	left: auto;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	bottom: 0px;
+	display: none;
+}
+
+.cookie-alert.show {
+	display: block;
+	transform: translateY(0%);
+	transition-delay: 1000ms;
+}
+
+.cookie-alert .card-body {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 2rem 3rem;
+}
+
+.cookie-content {
+	width: 85%;
+	padding-right: 10px;
+}
+
+.accept-btn {
+	width: 15%;
+}
+
+.accept-cookies {
+	display: block;
+	text-align: center;
+}
+
+.cookie-content p {
+	margin: 0;
+	padding-right: 10px;
+}
+
+.footer_left ul {
+	display: flex;
+	padding: 0;
+	list-style: none;
+	justify-content: end;
+}
+
+.footer_left ul li {
+	margin: 0px 7px;
+}
+
+.footer_left ul li a {
+	color: var(--main-color);
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 16px;
+}
+
+.footer_right ul {
+	display: flex;
+	padding-top: 10px;
+	list-style: none;
+	margin-bottom: 0;
+}
+
+.footer_right ul li {
+	margin-right: 25px;
+}
+
+.footer_right ul li a {
+	font-size: 20px;
+	color: var(--main-color);
+}
+
+footer {
+	background-color: #fff;
+}
+
+.footer_right h2 {
+	color: var(--main-color);
+}
+
+.footer_left .logo {
+	text-decoration: none;
+	font-size: 20px;
+	color: var(--main-color);
+}
+
+footer .footer_left ul li a {
+	transition: all 0.5s;
+}
+
+footer .footer_left ul li a:hover {
+	color: #222;
+}
+
+footer .footer_rightul li a {
+	transition: all 0.5s;
+}
+
+
+.lower_footer {
+	background: #fff;
+	border-top: 1px solid var(--font-color);
+}
+
+.lower_footer p {
+	color: var(--font-color);
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 14px;
+
+}
+
+.footer_right {
+	margin-top: 30px;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+.why_choose_card img {
+	max-width: 70px;
+	filter: invert(1);
+}
+
+.why_choose_card h3 {
+	margin-top: 22px;
+	margin-bottom: 22px;
+	font-size: 20px;
+}
+
+.why_choose_card p {
+	color: #fff;
+}
+
+.why_choose_card {
+	color: #fff;
+	text-align: start;
+	border: unset;
+	height: 100%;
+	padding: 25px 15px;
+	border: 1px solid rgb(255 255 255 / 35%);
+	border-radius: 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 25px 20px;
+}
+
+.why_choose_card:hover h3 {
+	color: var(--main-color);
+}
+
+.why_choose {
+	background-position: center;
+	background-image: url(../images/canada_home_bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+}
+
+.why_choose::before {
+	top: 0;
+	position: absolute;
+	content: '';
+	height: 100%;
+	width: 100%;
+	background-color: #000000c4;
+	z-index: -1;
+}
+
+.luxhotel_card img {
+	width: 100%;
+	height: 350px;
+	object-fit: cover;
+	transition: all 0.5s;
+}
+.luxhotel_card img:hover{
+	filter: brightness(0.5);
+}
+
+
+.bottom_text_section {
+	background-color: var(--bg-light);
+}
+
+
+
+.luxhotel_card_further img {
+	height: 440px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.content_card {
+	padding: 20px 10px;
+}
+
+.before_banner_section {
+	background-color: var(--bg-light);
+}
+
+.why_choose_resort p {
+	color: #000;
+}
+
+.why_choose_resort h3 {
+	color: #000;
+}
+
+.why_choose_resort img {
+	filter: unset;
+}
+
+.content_card ul {
+	text-align: start;
+	display: flex;
+	justify-content: space-between;
+}
+
+input.form-control.sub_btn {
+	width: 200px;
+	padding: 10px;
+	background-color: var(--main-color);
+	color: #ffff;
+	border: 1px solid transparent;
+	transition: all 0.5s;
+}
+
+input.form-control.sub_btn:hover {
+	font-weight: 500;
+	background-color: #fff;
+	color: #000;
+	border: 1px solid var(--main-color);
+}
+
+.form-control {
+	padding: 10px;
+	border: unset;
+	border-radius: unset;
+}
+
+
+
+.footer_left a img {
+	max-width: 180px;
+
+}
+
+.after_banner_section.section {
+	background: whitesmoke;
+}
+
+.luxury_hotels_inner img {
+	transition: all 0.5s;
+	padding: 40px;
+}
+.luxury_hotels_inner img:hover{
+	filter: brightness(0.5);
+}
+
+.why_choose.section p {
+	color: #fff;
+}
+
+.why_choose_card ul {
+	padding: 0;
+}
+
+.about_us h2::after {
+	margin: unset;
+}
+
+.about_us a {
+	background: yellow;
+	color: #222222;
+}
+
+.contact_us.section {
+	background: whitesmoke;
+}
+.footer_right ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	width: 35px;
+    height: 35px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	color: #fff;
+}
+.footer_right ul li:first-child a{
+    background: linear-gradient(30deg,#f38334,#da2e7d 50%,#6b54c6);
+}
+.footer_right ul li:nth-child(2) a{
+    background-color: #1877f2;
+}
+.footer_right ul li:nth-child(3) a{
+    background-color: #b00;
+}
+.footer_right ul li:nth-child(4) a{
+background-color: #1d9df0;
+}
+.luxury_hotels_inner_index h6 {
+    font-weight: 500;
+    font-size: 20px;
+}
+.content_hotel_card {
+    /* display: none; */
+	transition: all 0.8s;
+
+}
+.luxhotel_card:hover .content_hotel_card {
+    display: block;
+}
+.contact_us .left_side_first a {
+    color: #000;
+    background: yellow;
+}

@@ -1,0 +1,178 @@
+@media screen and (max-width:1199px) {
+	.top_footer {
+		text-align: center;
+	}
+
+	.footer_right {
+		margin-top: 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	.footer_right_ul ul {
+		margin-top: 20px;
+		justify-content: center;
+	}
+}
+
+
+@media screen and (max-width:1024px) {
+	.cookie-content {
+		width: 100%;
+		padding-right: 10px;
+		text-align: center;
+	}
+
+	.accept-btn {
+		width: 100%;
+		margin-top: 20px;
+		text-align: center;
+	}
+
+	.cookie-content p {
+		font-size: 14px;
+	}
+
+	.cookie-alert .card-body {
+		padding: 20px 10px;
+	}
+
+	.accept-btn a {
+		max-width: 150px;
+		width: 100%;
+		margin: auto !important;
+	}
+}
+
+@media (max-width: 991px) {
+	.nav {
+		padding: 1rem;
+	}
+
+	.nav>.nav-btn {
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+		padding-top: 0.2rem;
+		z-index: 2;
+	}
+
+	.nav>.nav-btn>label {
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		padding: 13px;
+		filter: invert(1);
+	}
+
+	.nav>.nav-btn>label>span {
+	display: block;
+    width: 30px;
+    height: 10px;
+    border-top: 2px solid #e9b947;
+    filter: invert(1);
+	}
+
+	.nav>.nav-list {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		width: 100%;
+		background-color: #fff;
+		height: 0;
+		transition: all 0.3s ease-in;
+		top: 0px;
+		left: 0;
+		overflow: hidden;
+		padding-left: 20px;
+	}
+
+	.nav>.nav-list>li {
+		width: 100%;
+		margin-top: 1.5rem;
+	}
+
+	.nav>#nav-check:checked~.nav-list {
+		height: 500px;
+	}
+
+	.nav>.nav-header {
+		padding-left: 0;
+	}
+
+	.nav>.nav-list>li a {
+		color: var(--bg-dark);
+	}
+
+	header {
+		padding: 0px 0px;
+	}
+
+
+	.top_footer {
+		text-align: center;
+	}
+
+	.footer_left ul {
+		display: block;
+	}
+
+	.footer_left ul li {
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	a.logo img {
+		max-width: 160px;
+	}
+	.footer_left a img {
+		max-width: 160px;
+	}
+
+	.nav-title a svg {
+		width: 190px;
+	}
+
+	h1 {
+		font-size: 35px;
+	}
+
+	h2 {
+		font-size: 26px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+	.sub_banner_content {
+		padding: 0px 16px;
+	}
+	.content_card ul {
+		display: block;;
+	}
+
+}
+
+@media (max-width: 575px) {
+
+	.footer_right {
+		display: block;
+		text-align: center;
+	}
+
+	.footer_right ul {
+		margin-bottom: 0;
+		justify-content: center;
+		margin-top: 20px;
+	}
+	.luxury_hotels_inner img{
+		padding: 10px;
+		}
+		
+}
