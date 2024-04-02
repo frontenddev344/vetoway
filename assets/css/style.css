@@ -395,17 +395,19 @@ footer .footer_rightul li a {
 }
 
 .why_choose_card {
-	color: #fff;
-	text-align: start;
-	border: unset;
-	height: 100%;
-	padding: 25px 15px;
-	border: 1px solid rgb(255 255 255 / 35%);
-	border-radius: 5px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	padding: 25px 20px;
+    color: #000;
+    text-align: start;
+    border: unset;
+    height: 100%;
+    padding: 0;
+    border: unset;
+    border-radius: unset;
+    box-shadow: unset;
+    padding: 0;
 }
-
+.why_choose_card ul li {
+    margin-bottom: 15px;
+}
 .why_choose_card:hover h3 {
 	color: var(--main-color);
 }
@@ -425,7 +427,7 @@ footer .footer_rightul li a {
 	content: '';
 	height: 100%;
 	width: 100%;
-	background-color: #000000c4;
+	background-color:whitesmoke;
 	z-index: -1;
 }
 
@@ -578,3 +580,7 @@ background-color: #1d9df0;
     color: #000;
     background: yellow;
 }
+:focus {
+	outline: 0 !important;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  }
