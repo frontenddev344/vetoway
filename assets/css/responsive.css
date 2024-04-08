@@ -156,6 +156,17 @@
 	.content_card ul {
 		display: block;;
 	}
+	.why_choose_card {
+		color: #000;
+		text-align: start;
+		border: unset;
+		height: 100%;
+		padding: 0;
+		border: unset;
+		border-radius: unset;
+		box-shadow: unset;
+		padding: 0 10px;
+	}
 
 }
 
