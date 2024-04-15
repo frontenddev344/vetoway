@@ -13,6 +13,12 @@
 		margin-top: 20px;
 		justify-content: center;
 	}
+	.luxury_hotels_inner_index h2 {
+		min-height: 70px;
+	}
+	.luxury_hotels_inner_index h6 {
+		min-height: 50px;
+	}
 }
 
 
@@ -94,8 +100,8 @@
 		margin-top: 1.5rem;
 	}
 
-	.nav>#nav-check:checked~.nav-list {
-		height: 500px;
+	.menuToggle .nav>#nav-check:checked~.nav-list {
+		height: 100vh !important;
 	}
 
 	.nav>.nav-header {
@@ -127,7 +133,10 @@
 }
 
 @media (max-width: 767px) {
-
+	.luxury_hotels_inner_index h2, .luxury_hotels_inner_index h6  {
+		min-height: auto;
+	}
+	
 	a.logo img {
 		max-width: 160px;
 	}
