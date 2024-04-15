@@ -245,6 +245,14 @@ h3 {
 	overflow: hidden;
 	transition:all .5s ease-in-out;
 }
+.luxhotel_card:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 18px;
+	transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
+	-moz-transition:all 0.1s ease-in-out;
+	-ms-transition:all 0.1s ease-in-out;
+	-o-transition:all 0.1s ease-in-out;
+}
 
 .luxury_hotels_inner {
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -317,7 +325,7 @@ h3 {
 
 .footer_right ul {
 	display: flex;
-	padding-top: 10px;
+	/* padding-top: 10px; */
 	list-style: none;
 	margin-bottom: 0;
 }
@@ -586,6 +594,29 @@ background-color: #1d9df0;
     padding-top: 120px;
     padding-bottom: 60px;
 }
+<<<<<<< HEAD
 
 
 
+=======
+.content_card h3, .luxury_hotels.section h3, .left_side_ab h3, .about_us.section h5 {
+color: var(--main-color);
+}
+.cross{
+	display: none;
+}
+.menuToggle .cross{
+	display: block;
+	position: absolute;
+    z-index: 9;
+    right: 15px;
+	font-size: 20px;
+	color: var(--main-color);
+}
+.menuToggle .nav-btn label {
+    display: none !important;
+}
+.menuToggle ul.nav-list {
+    height: 100vh;
+}
+>>>>>>> 62b4b2ed60081a1a69ab818bd3793c0f99305660
