@@ -185,5 +185,11 @@
 	.luxury_hotels_inner img{
 		padding: 10px;
 		}
-		
+		.nav>#nav-check:checked~.nav-list {
+			height: 100vh;
+		}	
+		.contact_us textarea {
+			height: 150px;
+
+		}
 }

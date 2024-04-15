@@ -567,7 +567,7 @@ background-color: #1d9df0;
     font-size: 20px;
 }
 .content_hotel_card {
-    display: none;
+	min-height: 565px;
     transition: all 0.8s;
     padding: 20px 10px;
 }
@@ -577,7 +577,6 @@ background-color: #1d9df0;
 }
 .contact_us .left_side_first a {
     color: #000;
-    background: yellow;
 }
 :focus {
 	outline: 0 !important;
@@ -587,3 +586,6 @@ background-color: #1d9df0;
     padding-top: 120px;
     padding-bottom: 60px;
 }
+
+
+
