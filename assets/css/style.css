@@ -557,6 +557,7 @@ input.form-control.sub_btn:hover {
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	color: #fff;
+	transition: all 0.5s;
 }
 .footer_right ul li:first-child a{
     background: linear-gradient(30deg,#f38334,#da2e7d 50%,#6b54c6);
@@ -614,4 +615,7 @@ background-color: #1d9df0;
 	}
 	.menuToggle ul.nav-list {
 		height: 100vh;
+	}
+	.footer_right ul li a:hover {
+		transform: rotate(360deg);
 	}
