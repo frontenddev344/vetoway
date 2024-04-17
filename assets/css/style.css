@@ -573,6 +573,7 @@ background-color: #1d9df0;
 .luxury_hotels_inner_index h6 {
     font-weight: 500;
     font-size: 20px;
+	text-align: center;
 }
 .content_hotel_card {
 	min-height: 565px;
@@ -594,29 +595,23 @@ background-color: #1d9df0;
     padding-top: 120px;
     padding-bottom: 60px;
 }
-<<<<<<< HEAD
-
-
-
-=======
 .content_card h3, .luxury_hotels.section h3, .left_side_ab h3, .about_us.section h5 {
-color: var(--main-color);
-}
-.cross{
-	display: none;
-}
-.menuToggle .cross{
-	display: block;
-	position: absolute;
-    z-index: 9;
-    right: 15px;
-	font-size: 20px;
 	color: var(--main-color);
-}
-.menuToggle .nav-btn label {
-    display: none !important;
-}
-.menuToggle ul.nav-list {
-    height: 100vh;
-}
->>>>>>> 62b4b2ed60081a1a69ab818bd3793c0f99305660
+	}
+	.cross{
+		display: none;
+	}
+	.menuToggle .cross{
+		display: block;
+		position: absolute;
+		z-index: 9;
+		right: 15px;
+		font-size: 20px;
+		color: var(--main-color);
+	}
+	.menuToggle .nav-btn label {
+		display: none !important;
+	}
+	.menuToggle ul.nav-list {
+		height: 100vh;
+	}
